@@ -53,7 +53,7 @@ export default function HomePage({}: Props) {
               }`}
             >
               <img src={`/assets/${menu.src}.png`} alt="menuIcons" />
-              <span className={`${!open && 'hidden'}`} origin-left duration-200>
+              <span className={`${!open && 'hidden'} origin-left duration-200`}>
                 {menu.title}
               </span>
             </li>
