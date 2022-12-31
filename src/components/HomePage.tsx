@@ -1,6 +1,8 @@
 /* eslint-disable simple-import-sort/imports */
 import { FaLessThan, FaHome } from 'react-icons/fa';
 import React, { useState } from 'react';
+import GridHome1 from './GridHome';
+import GridHome2 from './GridHome1';
 
 type Props = {};
 
@@ -61,9 +63,10 @@ export default function HomePage({}: Props) {
         </ul>
       </div>
 
-      <div className="h-screen flex-1 p-7 text-2xl font-semibold">
+      <div className="relative h-screen flex-1 p-7 text-2xl font-semibold">
         Home Page
-        {/* <GridHome /> */}
+        <GridHome2 />
+        <GridHome1 />
       </div>
     </div>
   );

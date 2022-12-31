@@ -2,11 +2,11 @@ import React from 'react';
 
 type Props = {};
 
-export default function GridHome({}: Props) {
+export default function GridHome2({}: Props) {
   return (
     <div className="container my-12 mx-auto px-4 md:px-12">
       <div className="-mx-1 flex flex-wrap lg:-mx-4">
-        <div className="my-1 w-full px-1 md:w-1/2 lg:my-4 lg:w-1/3 lg:px-4">
+        <div className="my-1 w-full px-1 duration-500 hover:scale-105 hover:shadow-xl md:w-1/2 lg:my-4 lg:w-1/3 lg:px-4">
           <article className="overflow-hidden rounded-lg shadow-lg">
             <a href="#">
               <img
@@ -48,7 +48,7 @@ export default function GridHome({}: Props) {
           </article>
         </div>
 
-        <div className="my-1 w-full px-1 md:w-1/2 lg:my-4 lg:w-1/3 lg:px-4">
+        <div className="my-1 w-full px-1 duration-500 hover:scale-105 hover:shadow-xl md:w-1/2 lg:my-4 lg:w-1/3 lg:px-4">
           <article className="overflow-hidden rounded-lg shadow-lg">
             <a href="#">
               <img
@@ -90,7 +90,7 @@ export default function GridHome({}: Props) {
           </article>
         </div>
 
-        <div className="my-1 w-full px-1 md:w-1/2 lg:my-4 lg:w-1/3 lg:px-4">
+        <div className=" my-1 w-full px-1 duration-500 hover:scale-105 hover:shadow-xl md:w-1/2 lg:my-4 lg:w-1/3 lg:px-4">
           <article className="overflow-hidden rounded-lg shadow-lg">
             <a href="#">
               <img
@@ -132,7 +132,7 @@ export default function GridHome({}: Props) {
           </article>
         </div>
 
-        <div className="my-1 w-full px-1 md:w-1/2 lg:my-4 lg:w-1/3 lg:px-4">
+        <div className=" my-1 w-full px-1 duration-500 hover:scale-105 hover:shadow-xl md:w-1/2 lg:my-4 lg:w-1/3 lg:px-4">
           <article className="overflow-hidden rounded-lg shadow-lg">
             <a href="#">
               <img
@@ -173,7 +173,7 @@ export default function GridHome({}: Props) {
             </footer>
           </article>
         </div>
-        <div className="my-1 w-full px-1 md:w-1/2 lg:my-4 lg:w-1/3 lg:px-4">
+        <div className=" my-1 w-full px-1 duration-500 hover:scale-105 hover:shadow-xl md:w-1/2 lg:my-4 lg:w-1/3 lg:px-4">
           <article className="overflow-hidden rounded-lg shadow-lg">
             <a href="#">
               <img
@@ -214,7 +214,7 @@ export default function GridHome({}: Props) {
             </footer>
           </article>
         </div>
-        <div className="my-1 w-full px-1 md:w-1/2 lg:my-4 lg:w-1/3 lg:px-4">
+        <div className=" my-1 w-full px-1 duration-500 hover:scale-105 hover:shadow-xl md:w-1/2 lg:my-4 lg:w-1/3 lg:px-4">
           <article className="overflow-hidden rounded-lg shadow-lg">
             <a href="#">
               <img
