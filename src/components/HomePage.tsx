@@ -1,8 +1,7 @@
 /* eslint-disable simple-import-sort/imports */
 import { FaLessThan, FaHome } from 'react-icons/fa';
 import React, { useState } from 'react';
-import GridHome1 from './GridHome';
-import GridHome2 from './GridHome1';
+import GridHome from './GridHome';
 
 type Props = {};
 
@@ -20,14 +19,14 @@ export default function HomePage({}: Props) {
     { title: 'Setting', src: 'Setting' },
   ];
   return (
-    <div className="flex">
+    <div className="flex bg-white">
       <div
         className={`${
-          open ? 'w-72' : 'w-20'
-        } relative h-screen w-72 bg-dark-purple p-5 pt-8 duration-700`}
+          open ? 'w-72' : 'w-24'
+        } relative h-200  w-72 bg-dark-purple p-5 pt-8 duration-700`}
       >
         <FaLessThan
-          className={`absolute -right-3 top-9 h-6 w-6 cursor-pointer rounded border-2 border-dark-purple bg-white ${
+          className={`absolute -right-3 top-9 h-8 w-8 cursor-pointer rounded border-2 border-dark-purple bg-white ${
             !open && 'rotate-180'
           }`}
           onClick={() => setOpen(!open)}
@@ -63,10 +62,9 @@ export default function HomePage({}: Props) {
         </ul>
       </div>
 
-      <div className="relative h-screen flex-1 p-7 text-2xl font-semibold">
+      <div className="relative h-screen flex-1  p-7 text-2xl font-semibold ">
         Home Page
-        <GridHome2 />
-        <GridHome1 />
+        <GridHome />
       </div>
     </div>
   );

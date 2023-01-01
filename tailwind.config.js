@@ -41,6 +41,9 @@ module.exports = {
           900: '#2a4365',
         },
       },
+      height: {
+        200: '80rem',
+      },
     },
   },
   plugins: [],
