@@ -1,6 +1,7 @@
 /* eslint-disable simple-import-sort/imports */
 import { FaLessThan, FaHome } from 'react-icons/fa';
 import React, { useState } from 'react';
+import Header from './Header';
 import GridHome from './GridHome';
 
 type Props = {};
@@ -23,7 +24,7 @@ export default function HomePage({}: Props) {
       <div
         className={`${
           open ? 'w-72' : 'w-24'
-        } relative h-200  w-72 bg-dark-purple p-5 pt-8 duration-700`}
+        } relative z-10  min-h-screen w-72 bg-dark-purple p-5 pt-8 duration-700`}
       >
         <FaLessThan
           className={`absolute -right-3 top-9 h-8 w-8 cursor-pointer rounded border-2 border-dark-purple bg-white ${
@@ -42,7 +43,7 @@ export default function HomePage({}: Props) {
               !open && 'hidden'
             } `}
           >
-            Designer
+            Home
           </h1>
         </div>
         <ul className="pt-6">
@@ -62,8 +63,8 @@ export default function HomePage({}: Props) {
         </ul>
       </div>
 
-      <div className="relative h-screen flex-1  p-7 text-2xl font-semibold ">
-        Home Page
+      <div className="relative z-0 min-h-screen  flex-1 bg-[url('/assets/images/background.png')] bg-[length:400px_100px] bg-repeat text-2xl font-semibold ">
+        <Header />
         <GridHome />
       </div>
     </div>
