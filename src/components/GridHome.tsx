@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable tailwindcss/no-custom-classname */
+import Link from 'next/dist/client/link';
 import React from 'react';
 
 type Props = {};
@@ -18,22 +19,22 @@ export default function GridHome({}: Props) {
       <div className="-mx-1 flex flex-wrap place-content-center gap-8 lg:-mx-8">
         <div className="my-1 w-full px-1 duration-500 hover:scale-105 hover:shadow-xl md:w-1/2 lg:my-4 lg:w-1/3 lg:px-4">
           <article className="overflow-hidden rounded-lg shadow-lg">
-            <a href="/games/quantum-jim">
+            <Link href="/games/quantum-jim">
               <img
                 alt="Placeholder"
                 className="block h-auto w-full"
                 src="/assets/images/quantumjim.png"
               />
-            </a>
+            </Link>
 
             <header className="flex items-center justify-between p-2 leading-tight md:p-4">
               <h1 className="text-lg">
-                <a
+                <Link
                   className="text-black no-underline hover:underline"
                   href="/games/quantum-jim"
                 >
                   Save the Quantum Princess
-                </a>
+                </Link>
               </h1>
               <p className="text-grey-darker text-sm">11/1/19</p>
             </header>
@@ -63,22 +64,22 @@ export default function GridHome({}: Props) {
 
         <div className="my-1 w-full px-1 duration-500 hover:scale-105 hover:shadow-xl md:w-1/2 lg:my-4 lg:w-1/3 lg:px-4">
           <article className="overflow-hidden rounded-lg shadow-lg">
-            <a href="/games/quantum-minecraft">
+            <Link href="/games/quantum-minecraft">
               <img
                 alt="Placeholder"
                 className="block h-auto w-full"
                 src="/assets/images/quantumminecraft.png"
               />
-            </a>
+            </Link>
 
             <header className="flex items-center justify-between p-2 leading-tight md:p-4">
               <h1 className="text-lg">
-                <a
+                <Link
                   className="text-black no-underline hover:underline"
                   href="/games/quantum-minecraft"
                 >
                   Quantum Minecraft
-                </a>
+                </Link>
               </h1>
               <p className="text-grey-darker text-sm">11/1/19</p>
             </header>
