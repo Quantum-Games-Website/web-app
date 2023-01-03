@@ -1,13 +1,22 @@
-/* eslint-disable simple-import-sort/imports */
-import { FaLessThan, FaHome } from 'react-icons/fa';
+/* eslint-disable @typescript-eslint/no-shadow */
+/* eslint-disable @typescript-eslint/no-use-before-define */
 import React, { useState } from 'react';
-import Header from './Header';
-import GridHome from './GridHome';
+import { FaHome, FaLessThan } from 'react-icons/fa';
+
+import Header from '@/components/Header';
 
 type Props = {};
 
 // eslint-disable-next-line no-empty-pattern
-export default function HomePage({}: Props) {
+export default function index({}: Props) {
+  return (
+    <>
+      <QuantumJim />
+    </>
+  );
+}
+
+function QuantumJim() {
   const [open, setOpen] = useState(true);
   const Menus = [
     { title: 'Dashboard', src: 'Chart_fill' },
@@ -63,9 +72,27 @@ export default function HomePage({}: Props) {
         </ul>
       </div>
 
-      <div className="relative z-0 min-h-screen  flex-1 bg-[url('/assets/images/background.png')] bg-[length:400px_500px] bg-repeat text-2xl font-semibold ">
+      <div className="z-0 min-h-screen  flex-1 bg-[url('/assets/images/background.png')] bg-[length:400px_500px] bg-repeat text-2xl font-semibold ">
         <Header />
-        <GridHome />
+        <div className="container my-12 mx-auto   px-4 md:px-12">
+          {/* <!-- title --> */}
+          <h1 className="font-kanit mb-4 text-6xl hover:text-blue-500">
+            Play Now!
+          </h1>
+          <div className="p-10 text-center">
+            <img
+              className="h-auto max-w-lg place-items-center items-center justify-center rounded-lg"
+              src={'/assets/images/quantumminecraft.png'}
+              alt="image description"
+            ></img>
+          </div>
+          <p className="text-gray-600">
+            {' '}
+            {
+              'Explore the Quantum World with Minecraft. I still need to learn how to create quantum mods'
+            }
+          </p>
+        </div>
       </div>
     </div>
   );

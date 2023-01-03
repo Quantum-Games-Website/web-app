@@ -6,8 +6,8 @@ type Props = {};
 export default function Header({}: Props) {
   return (
     <header>
-      <nav className="h-64  border-gray-200 bg-white px-4 py-2.5 dark:bg-dark-purple lg:px-6">
-        <div className="mx-auto flex h-64 max-w-screen-xl flex-wrap items-center justify-between ">
+      <nav className="h-44  border-gray-200 bg-white px-4 py-2.5 dark:bg-dark-purple lg:px-6">
+        <div className="mx-auto flex h-44 max-w-screen-xl flex-wrap items-center justify-between ">
           {/* <div className="flex h-64 items-center justify-center"> */}
           <a href="https://flowbite.com" className="flex items-center">
             <img
