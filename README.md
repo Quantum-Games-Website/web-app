@@ -5,5 +5,6 @@
 # Tools
 - Typescript
 - React and NextJS
+- Tailwind
 # Contributing
 - Any ideas are welcome! Feel free to contribute!
